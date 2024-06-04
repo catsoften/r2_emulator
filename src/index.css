@@ -1,0 +1,252 @@
+a:hover, button:hover, select:hover
+{
+	background-color: #7F7F7F;
+}
+
+a:active, button:active /* Chrome uses this for select popup background (unreadable) */
+{
+	background-color: #FFFF80;
+}
+
+input
+{
+	background-color: #7F7F7F;
+	border: solid #FFFFFF 2px;
+	padding: 4px;
+}
+
+input[type="range"]
+{
+	-webkit-appearance: none;
+	background-color: #3F3F3F;
+	border: solid #FFFFFF 2px;
+	height: 5px;
+	padding: 0px;
+}
+
+input[type="range"]::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #3F3F3F;
+	border: solid #FFFFFF 2px;
+	height: 15px;
+	width: 15px;
+}
+
+input[type="range"]::-moz-range-thumb
+{
+	appearance: none;
+	background-color: #3F3F3F;
+	border: solid #FFFFFF 2px;
+	height: 15px;
+	width: 15px;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb
+{
+	background-color: #7F7F7F;
+}
+
+input[type="range"]:hover::-moz-range-thumb
+{
+	background-color: #7F7F7F;
+}
+
+input[type="range"]:active::-webkit-slider-thumb
+{
+	background-color: #FFFF80;
+}
+
+input[type="range"]:active::-moz-range-thumb
+{
+	background-color: #FFFF80;
+}
+
+dialog
+{
+	background-color: #000000;
+	border: solid #7F7F7F 2px;
+}
+
+::backdrop
+{
+	background-image: radial-gradient(#000000FF, #00000000);
+}
+
+#divVersion
+{
+	left: 8px;
+	position: absolute;
+	top: 2px;
+}
+
+#dialogDialog > div
+{
+	display: grid;
+	gap: 4px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto;
+}
+
+#dialogDialog > div > button
+{
+	width: 100%;
+}
+
+#spanDialog
+{
+	grid-column: 1 / span 2;
+	text-align: center;
+}
+
+#inputDialog
+{
+	grid-column: 1 / span 2;
+}
+
+#divInterface
+{
+	align-content: center;
+	display: grid;
+	gap: 8px;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	justify-content: center;
+	padding-top: 32px;
+	width: 100%;
+}
+
+#divInterface > div
+{
+	margin: auto;
+	text-align: center;
+}
+
+#divMenu
+{
+	align-content: space-between;
+	display: grid;
+	gap: 4px;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	justify-content: space-between;
+}
+
+#divMenu > *
+{
+	margin: 4px;
+	padding: 2px;
+}
+
+#divControls
+{
+	grid-row: 1 / span 2;
+}
+
+#divControls > *
+{
+	margin: 4px;
+}
+
+#divFlags
+{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(2, auto);
+	justify-content: center;
+}
+
+#divRegisters
+{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(9, auto);
+}
+
+#divMemory
+{
+	align-items: center;
+	display: flex;
+	height: 256px;
+}
+
+#divKeyboard
+{
+	width: max-content;
+}
+
+.border
+{
+	border: solid #FFFFFF 2px;
+}
+
+.flagLabel
+{
+	width: 3ch;
+}
+
+.flagValue
+{
+	width: 5ch;
+}
+
+.registerLabel
+{
+	width: 6ch;
+}
+
+.registerValue
+{
+	width: 4ch;
+}
+
+.flagLabel, .registerLabel
+{
+	color: #7F7F7F;
+	margin-left: 4px;
+	text-align: right;
+}
+
+.flagValue, .registerValue
+{
+	cursor: pointer;
+	margin-right: 4px;
+	text-align: left;
+}
+
+.key
+{
+	height: 40px;
+	width: 40px;
+}
+
+.key.key14
+{
+	width: 60px;
+}
+
+.key.key19
+{
+	width: 80px;
+}
+
+.key.key24
+{
+	width: 100px;
+}
+
+.key.key69
+{
+	width: 280px;
+}
+
+.key.keyShiftSet
+{
+	background-color: #007F00;
+}
+
+.key.keyCapsLockSet
+{
+	background-color: #7F0000;
+}
